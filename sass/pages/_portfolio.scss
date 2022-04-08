@@ -1,0 +1,27 @@
+.portfolio {
+   min-height: calc(100vh - 145px);
+   display: flex;
+   align-items: center;
+   background-color: $section-background;
+   &-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      margin-top: 100px;
+      grid-gap: 30px;
+      .card {
+         background-color: #fff;
+         margin-bottom: 50px;
+         img {
+            max-width: 100%;
+         }
+         .info {
+            padding: 0px 20px;
+            p {
+               color: #979797;
+               line-height: 1.6;
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+}

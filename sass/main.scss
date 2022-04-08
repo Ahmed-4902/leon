@@ -1,0 +1,100 @@
+@import "helpers/config.scss";
+@import "helpers/mixins.scss";
+@import "pages/landing.scss";
+@import "pages/features.scss";
+@import "pages/services.scss";
+@import "pages/portfolio.scss";
+@import "pages/about.scss";
+@import "pages/contact.scss";
+@import "helpers/resbensive.scss";
+
+body {
+   font-family: "Work Sans", sans-serif;
+}
+a {
+   text-decoration: none;
+}
+
+.header {
+   padding: 20px;
+   position: sticky;
+   .container {
+      @include flex(space-between, center);
+      .logo {
+         width: 60px;
+      }
+      .links {
+         position: relative;
+         // &:hover .icon span:nth-child(2) {
+         //    width: 100%;
+         // }
+         .icon {
+            width: 30px;
+            @include flex(flex-end, center);
+            flex-wrap: wrap;
+            span {
+               height: 2px;
+               margin-bottom: 5px;
+               background-color: #000;
+               &:first-child,
+               &:last-child {
+                  width: 100%;
+               }
+               &:nth-child(2) {
+                  width: 60%;
+                  transition: $main-duration;
+               }
+            }
+         }
+         ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            background-color: $section-background;
+            right: 0;
+            top: calc(100% + 15px);
+            min-width: 200px;
+            display: none;
+            ul:before {
+               content: "";
+               border: 10px solid;
+               border-color: transparent transparent $section-background
+                  transparent;
+               position: absolute;
+               top: -20px;
+               right: 0;
+            }
+            li {
+               a {
+                  display: block;
+                  color: #333;
+                  padding: 15px;
+                  transition: $main-duration;
+                  &:hover {
+                     padding-left: 25px;
+                  }
+               }
+               &:not(:last-child) a {
+                  border-bottom: 1px solid #ddd;
+               }
+            }
+         }
+         // &:hover ul {
+         //    display: block;
+         // }
+      }
+   }
+}
+
+.footer {
+   background-color: $se2-color;
+   color: #fff;
+   padding: 30px 10px;
+   text-align: center;
+   font-size: 18px;
+   span {
+      font-weight: bold;
+      color: $main-color;
+   }
+}
