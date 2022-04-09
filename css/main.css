@@ -55,7 +55,7 @@ html {
 }
 /* End Components */
 .landing {
-  height: calc(100vh - 145px);
+  height: calc(100vh - 125px);
   background-image: url(../image/mount.jpg);
   background-size: cover;
   display: -webkit-box;
@@ -95,7 +95,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: calc(100vh - 145px);
+  min-height: calc(100vh - 125px);
 }
 .features .container {
   display: -ms-grid;
@@ -122,7 +122,7 @@ html {
 }
 
 .services {
-  min-height: calc(100vh - 145px);
+  min-height: calc(100vh - 125px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +179,7 @@ html {
 }
 
 .portfolio {
-  min-height: calc(100vh - 145px);
+  min-height: calc(100vh - 125px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,7 +212,7 @@ html {
 }
 
 .about {
-  min-height: calc(100vh - 145px);
+  min-height: calc(100vh - 125px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,7 +279,7 @@ html {
 }
 
 .contact {
-  min-height: calc(100vh - 145px);
+  min-height: calc(100vh - 125px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,7 +465,7 @@ a {
 .footer {
   background-color: #2c4755;
   color: #fff;
-  padding: 30px 10px;
+  padding: 20px 10px;
   text-align: center;
   font-size: 18px;
 }
